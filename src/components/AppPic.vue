@@ -29,7 +29,9 @@ export default {
 
 <style scoped>
 input {
-    height: 20px;
+    height: 30px;
+    width: 100%;
+    margin-top: 30px;
 
 }
 </style>

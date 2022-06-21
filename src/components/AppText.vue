@@ -1,7 +1,7 @@
 <template>
     <h3>Add a Piece of Text</h3>
     <textarea type="text" v-model="text"></textarea>
-    <app-button @action="addText" title="Add Text"></app-button>
+    <app-button class="button-btn" @action="addText" title="Add Text"></app-button>
 </template>
 
 <script>
@@ -25,7 +25,10 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+h3 {
+  margin-bottom: 20px;
+}
 textarea {
     margin: 0 auto;
     outline: none;
@@ -37,6 +40,8 @@ textarea {
     padding-left: 5px;
     border-radius: 7px;
     font-size: 0.8rem;
-    margin-bottom: 20px;
+}
+.button-btn {
+ margin-top: 20px;
 }
 </style>
